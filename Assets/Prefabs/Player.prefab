@@ -168,7 +168,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -281,7 +281,6 @@ MonoBehaviour:
   poweredBulletPrefab: {fileID: 3978381933246255998, guid: 3326ebb4c44d3a24aad344ea8b187316, type: 3}
   fireRate: 4
   powerupDuration: 10
-  sr: {fileID: 1101541934819803471}
 --- !u!114 &4059749466576553097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   recoveryTime: 3
+  hitMaterial: {fileID: -876546973899608171, guid: f2da19c87f2516440897a7ac87b39899, type: 3}
 --- !u!114 &5312208209658269770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,5 +311,3 @@ MonoBehaviour:
   bankAngle: 28
   bankInTime: 0.12
   bankOutTime: 0.22
-  rb: {fileID: 7029545338589447644}
-  sr: {fileID: 1101541934819803471}

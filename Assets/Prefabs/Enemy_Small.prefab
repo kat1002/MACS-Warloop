@@ -64,7 +64,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,6 +177,7 @@ MonoBehaviour:
   damage: 25
   killPoints: 25
   powerUpPrefab: {fileID: 7228754159689715522, guid: 5aaab0cb32c5b914d85d075e64b09113, type: 3}
+  hitMaterial: {fileID: -876546973899608171, guid: f2da19c87f2516440897a7ac87b39899, type: 3}
 --- !u!114 &6777866702776503451
 MonoBehaviour:
   m_ObjectHideFlags: 0

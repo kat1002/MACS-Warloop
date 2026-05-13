@@ -4,7 +4,8 @@ using DG.Tweening;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private float recoveryTime = 3f;
+    [SerializeField] private float    recoveryTime = 3f;
+    [SerializeField] private Material hitMaterial;
 
     private enum State { Idle, Recovery, Dead }
     private State state = State.Idle;
@@ -30,8 +31,7 @@ public class PlayerHealth : MonoBehaviour
             originalMaterial = sr.sharedMaterial;
         }
 
-        var shader = Shader.Find("Shader Graphs/HitShader");
-        if (shader != null) hitMatInstance = new Material(shader);
+        if (hitMaterial != null) hitMatInstance = new Material(hitMaterial);
     }
 
     public void TakeDamage()
@@ -43,7 +43,6 @@ public class PlayerHealth : MonoBehaviour
         col.enabled = false;
 
         GameManager.Instance.LoseLife();
-        AudioManager.Instance?.PlaySFX(AudioManager.Instance.playerHit);
 
         Camera.main.transform.DOShakePosition(0.2f, strength: 0.3f, vibrato: 12);
         transform.DOPunchPosition(new Vector3(0f, -0.4f, 0f), 0.25f, 8, 0.5f);

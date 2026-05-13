@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour, IPoolable
 
     [Header("Refs")]
     [SerializeField] private GameObject powerUpPrefab;
+    [SerializeField] private Material   hitMaterial;
 
     public int Damage => damage;
 
@@ -28,8 +29,7 @@ public class EnemyHealth : MonoBehaviour, IPoolable
         originalColor = sr != null ? sr.color : Color.white;
         if (sr != null) originalMaterial = sr.sharedMaterial;
 
-        var shader = Shader.Find("Shader Graphs/HitShader");
-        if (shader != null) hitMatInstance = new Material(shader);
+        if (hitMaterial != null) hitMatInstance = new Material(hitMaterial);
     }
 
     public void TakeDamage(int amount)
