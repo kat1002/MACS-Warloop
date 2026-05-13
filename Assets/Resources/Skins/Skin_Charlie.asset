@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bb2724492a8b04396e3b7e7bafa716, type: 3}
+  m_Name: Skin_Charlie
+  m_EditorClassIdentifier: Assembly-CSharp::SkinData
+  skinName: Charlie
+  level0: {fileID: 21300000, guid: 2a65fdaac8590fd4b8ba3271d185dc94, type: 3}
+  level1: {fileID: 21300000, guid: fdee1cd7f31e82844b67d60df0fd9dd9, type: 3}
+  level2: {fileID: 21300000, guid: e81aa0288e901e3459c94b0b2d1aa09e, type: 3}

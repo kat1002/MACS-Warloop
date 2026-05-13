@@ -1053,5 +1053,9 @@
                 }
             ]
         }
-    ]
+    ],
+    "generateCSharpClass": true,
+    "wrapperCodePath": "Assets/InputSystem_Actions.cs",
+    "wrapperClassName": "InputSystem_Actions",
+    "wrapperCodeNamespace": ""
 }
