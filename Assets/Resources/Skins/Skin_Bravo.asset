@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Skin_Bravo
   m_EditorClassIdentifier: Assembly-CSharp::SkinData
   skinName: Bravo
-  level0: {fileID: 21300000, guid: 5ee90785b63cc4d4d82bd08a49044121, type: 3}
-  level1: {fileID: 21300000, guid: 8f3d0a8abd142a4478df3d4669b4db26, type: 3}
+  level0: {fileID: 21300000, guid: 8f3d0a8abd142a4478df3d4669b4db26, type: 3}
+  level1: {fileID: 21300000, guid: 5ee90785b63cc4d4d82bd08a49044121, type: 3}
   level2: {fileID: 21300000, guid: 3644287202e3aa74692014598c63b053, type: 3}
