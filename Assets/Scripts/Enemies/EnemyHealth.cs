@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour, IPoolable
 
     [Header("Refs")]
     [SerializeField] private GameObject powerUpPrefab;
+    [SerializeField] private GameObject poweredHitVfxPrefab;
     [SerializeField] private Material   hitMaterial;
 
     public int Damage => damage;
@@ -32,11 +33,19 @@ public class EnemyHealth : MonoBehaviour, IPoolable
         if (hitMaterial != null) hitMatInstance = new Material(hitMaterial);
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int amount, bool powered = false)
     {
         currentHp -= amount;
         FlashHit();
+        if (powered) SpawnPoweredHitVfx();
         if (currentHp <= 0) Die();
+    }
+
+    private void SpawnPoweredHitVfx()
+    {
+        if (poweredHitVfxPrefab == null) return;
+        var vfx = PoolManager.Instance.Get(poweredHitVfxPrefab);
+        vfx.transform.position = transform.position;
     }
 
     private void FlashHit()

@@ -3,9 +3,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bullet : MonoBehaviour, IPoolable
 {
-    [SerializeField] private float  speed        = 10f;
-    [SerializeField] private int    damage       = 25;
+    [SerializeField] private float  speed         = 10f;
+    [SerializeField] private int    damage        = 25;
     [SerializeField] private bool   isEnemyBullet = false;
+    [SerializeField] private bool   isPowered     = false;
 
     public void Setup(float spd, int dmg, bool enemy)
     {
@@ -28,7 +29,7 @@ public class Bullet : MonoBehaviour, IPoolable
     {
         if (!isEnemyBullet && other.TryGetComponent<EnemyHealth>(out var enemy))
         {
-            enemy.TakeDamage(damage);
+            enemy.TakeDamage(damage, isPowered);
             AudioManager.Instance?.PlaySFX(AudioManager.Instance.enemyHit);
             PoolManager.Instance.Return(gameObject);
         }

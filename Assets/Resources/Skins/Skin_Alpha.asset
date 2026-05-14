@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Skin_Alpha
   m_EditorClassIdentifier: Assembly-CSharp::SkinData
   skinName: Alpha
-  level0: {fileID: 21300000, guid: 474fae8ba683048429673fe7641a1d5a, type: 3}
+  level0: {fileID: 21300000, guid: 9f46463f215a2a54ba7fba94c0368fe7, type: 3}
   level1: {fileID: 21300000, guid: 474fae8ba683048429673fe7641a1d5a, type: 3}
   level2: {fileID: 21300000, guid: 2c345efcbd5147645bb51ceab9ddd855, type: 3}

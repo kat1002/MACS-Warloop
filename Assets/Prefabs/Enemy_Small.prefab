@@ -177,6 +177,7 @@ MonoBehaviour:
   damage: 25
   killPoints: 25
   powerUpPrefab: {fileID: 7228754159689715522, guid: 5aaab0cb32c5b914d85d075e64b09113, type: 3}
+  poweredHitVfxPrefab: {fileID: 9051181372914487942, guid: 0114acada7bcc2b43838f336e84fd632, type: 3}
   hitMaterial: {fileID: -876546973899608171, guid: f2da19c87f2516440897a7ac87b39899, type: 3}
 --- !u!114 &6777866702776503451
 MonoBehaviour:
@@ -192,6 +193,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   moveSpeed: 0.75
   fireInterval: 5
+  skins:
+  - {fileID: 21300000, guid: 0754b14be8517eb4b826163374ef1afd, type: 3}
+  - {fileID: 21300000, guid: 0a6550d98414a7841a8305d21f58eaf9, type: 3}
+  - {fileID: 21300000, guid: a8c0d4a1b80c2484e8eeb838e3f27ea8, type: 3}
+  - {fileID: 21300000, guid: 361019243cc53b948acdfd07c01895cf, type: 3}
   bulletPrefab: {fileID: 6227406620199074512, guid: 67cee9d29bbb9224eab42c20cff6280c, type: 3}
   playerLayer:
     serializedVersion: 2

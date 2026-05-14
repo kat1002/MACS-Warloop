@@ -7,6 +7,9 @@ public class EnemyController : MonoBehaviour, IPoolable
     [SerializeField] private float moveSpeed    = 2f;
     [SerializeField] private float fireInterval = 2f;
 
+    [Header("Skins")]
+    [SerializeField] private Sprite[] skins;
+
     [Header("Refs")]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private LayerMask  playerLayer;
@@ -51,6 +54,10 @@ public class EnemyController : MonoBehaviour, IPoolable
     public void OnGetFromPool()
     {
         nextFireTime = 0f;
+
+        if (skins != null && skins.Length > 0 && sr != null)
+            sr.sprite = skins[Random.Range(0, skins.Length)];
+
         transform.localScale = Vector3.zero;
         transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack);
     }

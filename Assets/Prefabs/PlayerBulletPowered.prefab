@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2216962988415778236, guid: eae36fadfff4728429ad19ac01531d03, type: 3}
+  m_Sprite: {fileID: -1025433049423861475, guid: f6f00da0f8509704f902a0af4325deb3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   speed: 10
   damage: 50
   isEnemyBullet: 0
+  isPowered: 1
 --- !u!96 &3002265105523487741
 TrailRenderer:
   serializedVersion: 4
