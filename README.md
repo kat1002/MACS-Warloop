@@ -1,6 +1,6 @@
-# Space Shooter — Appota Test
+# MACS: WARLOOP — Appota Test
 
-A vertical 2D space shooter built in Unity. Survive endless enemy waves, rack up score multipliers, collect power-ups, and chase your high score.
+A vertical 2D action shooter built in Unity. Survive endless enemy waves, rack up score multipliers, collect power-ups, and chase your high score.
 
 ---
 
