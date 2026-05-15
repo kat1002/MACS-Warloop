@@ -160,7 +160,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void QuitGame() { 
+    public void QuitGame()
+    {
+        Time.timeScale = 1f;
         EventManager.EmitGameQuit();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }

@@ -46,8 +46,8 @@ public class EnemyController : MonoBehaviour, IPoolable
         nextFireTime = Time.time + fireInterval;
         if (bulletPrefab == null) return;
 
-        var b = PoolManager.Instance.Get(bulletPrefab);
-        b.transform.SetPositionAndRotation(transform.position, Quaternion.identity);
+        var b = PoolManager.Instance.Get(bulletPrefab); 
+        b.transform.SetPositionAndRotation(transform.position, Quaternion.Euler(0f, 0f, 180f));
         b.GetComponent<Bullet>()?.Setup(7f, 25, true);
     }
 
